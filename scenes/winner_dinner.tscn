@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://blti03otehyj6"]
+
+[ext_resource type="Script" uid="uid://dn2ng620aghb8" path="res://scenes/winner_dinner.gd" id="1_e442y"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="1_n6j1f"]
+[ext_resource type="Texture2D" uid="uid://c6lvb5wt5gs2p" path="res://bullshish/sasalot.png" id="2_e442y"]
+[ext_resource type="Texture2D" uid="uid://dvemswbytqucf" path="res://bullshish/ultimate obrz.png" id="3_4h5a6"]
+[ext_resource type="Texture2D" uid="uid://dctd2srbpdnwp" path="res://bullshish/WIN.png" id="4_028ih"]
+[ext_resource type="Texture2D" uid="uid://bin5oiqlgreay" path="res://bullshish/piwo Paliwo.png" id="5_f6fr7"]
+
+[node name="Node2D" type="Node2D" unique_id=1463275481]
+script = ExtResource("1_e442y")
+
+[node name="TrashGround1" type="Sprite2D" parent="." unique_id=616328031]
+position = Vector2(2654.0002, 346)
+scale = Vector2(11.149677, 7.9442983)
+texture = ExtResource("1_n6j1f")
+
+[node name="Sasalot" type="Sprite2D" parent="." unique_id=835446070]
+position = Vector2(163, 409)
+scale = Vector2(0.3889475, 0.3889475)
+texture = ExtResource("2_e442y")
+
+[node name="UltimateObrz" type="Sprite2D" parent="." unique_id=96443872]
+position = Vector2(229.5, 157)
+scale = Vector2(1.4326923, 1.4326923)
+texture = ExtResource("3_4h5a6")
+
+[node name="Win" type="Sprite2D" parent="." unique_id=1892531804]
+position = Vector2(869, 153)
+scale = Vector2(1.6525, 0.78450006)
+texture = ExtResource("4_028ih")
+
+[node name="PiwoPaliwo" type="Sprite2D" parent="." unique_id=2011322588]
+position = Vector2(728, 538)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo2" type="Sprite2D" parent="." unique_id=81694045]
+position = Vector2(819, 405)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo3" type="Sprite2D" parent="." unique_id=76766096]
+position = Vector2(863, 607)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo4" type="Sprite2D" parent="." unique_id=163178946]
+position = Vector2(987, 462)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo5" type="Sprite2D" parent="." unique_id=1611061243]
+position = Vector2(949, 312)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo6" type="Sprite2D" parent="." unique_id=1669086795]
+position = Vector2(880, 497)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo7" type="Sprite2D" parent="." unique_id=1624517004]
+position = Vector2(1089, 346)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo8" type="Sprite2D" parent="." unique_id=1093402186]
+position = Vector2(1092, 469)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo9" type="Sprite2D" parent="." unique_id=1020158147]
+position = Vector2(1005, 605)
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo10" type="Sprite2D" parent="." unique_id=1920498597]
+position = Vector2(1084, 599.99994)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo11" type="Sprite2D" parent="." unique_id=1099874553]
+position = Vector2(940.9999, 592.99994)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo12" type="Sprite2D" parent="." unique_id=1975505426]
+position = Vector2(942, 464.99994)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo13" type="Sprite2D" parent="." unique_id=533671540]
+position = Vector2(840.00006, 531)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo14" type="Sprite2D" parent="." unique_id=1588506249]
+position = Vector2(807, 594.99994)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo15" type="Sprite2D" parent="." unique_id=478659197]
+position = Vector2(790, 500.99994)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo16" type="Sprite2D" parent="." unique_id=109263811]
+position = Vector2(885, 400)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo17" type="Sprite2D" parent="." unique_id=1451770297]
+position = Vector2(861, 298)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo18" type="Sprite2D" parent="." unique_id=267235152]
+position = Vector2(956, 379.99997)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo19" type="Sprite2D" parent="." unique_id=851904557]
+position = Vector2(1015, 332)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo20" type="Sprite2D" parent="." unique_id=10378147]
+position = Vector2(1029, 415)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="PiwoPaliwo21" type="Sprite2D" parent="." unique_id=1449462199]
+position = Vector2(1038, 509)
+rotation = 0.0003740415
+texture = ExtResource("5_f6fr7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=947405157]
+offset_left = 29.0
+offset_top = 462.0
+offset_right = 694.0
+offset_bottom = 547.0
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/normal_font_size = 30
+text = "Is this heaven? No, ULTIMATE HEAVEN!"
+
+[node name="Ultimate_win" type="Button" parent="." unique_id=1415167560]
+offset_left = 466.0
+offset_top = 314.0
+offset_right = 661.0
+offset_bottom = 375.0
+text = "ULTIMATE WIN
+(go back to title)"
+
+[connection signal="pressed" from="Ultimate_win" to="." method="_on_ultimate_win_pressed"]

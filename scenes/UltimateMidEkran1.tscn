@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cc0q84yna7uyv"]
+
+[ext_resource type="Script" uid="uid://1mtwajyumv6i" path="res://scenes/ultimate_mid_ekran_1.gd" id="1_kjvap"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="2_edoog"]
+[ext_resource type="Texture2D" uid="uid://bin5oiqlgreay" path="res://bullshish/piwo Paliwo.png" id="2_kjvap"]
+
+[node name="UltimateMidEkran1" type="Node2D" unique_id=744696994]
+script = ExtResource("1_kjvap")
+
+[node name="UltimateBackground" type="TextureRect" parent="." unique_id=1174228161]
+offset_left = 5.9999695
+offset_top = -2902.0
+offset_right = 11363.411
+offset_bottom = 4289.109
+scale = Vector2(0.49042866, 0.49185735)
+texture = ExtResource("2_edoog")
+
+[node name="Kontenerhp" type="HBoxContainer" parent="." unique_id=1018193573]
+custom_minimum_size = Vector2(1, 1)
+offset_left = 242.0
+offset_top = 158.0
+offset_right = 998.0
+offset_bottom = 286.0
+
+[node name="Żyćko1" type="TextureRect" parent="Kontenerhp" unique_id=834047102]
+layout_mode = 2
+texture = ExtResource("2_kjvap")
+stretch_mode = 3
+
+[node name="Żyćko2" type="TextureRect" parent="Kontenerhp" unique_id=1047578135]
+layout_mode = 2
+texture = ExtResource("2_kjvap")
+
+[node name="Żyćko3" type="TextureRect" parent="Kontenerhp" unique_id=1508837429]
+layout_mode = 2
+texture = ExtResource("2_kjvap")
+
+[node name="Żyćko4" type="TextureRect" parent="Kontenerhp" unique_id=859884372]
+layout_mode = 2
+texture = ExtResource("2_kjvap")
+
+[node name="Żyćko5" type="TextureRect" parent="Kontenerhp" unique_id=72578577]
+layout_mode = 2
+texture = ExtResource("2_kjvap")
+
+[node name="lelewel" type="RichTextLabel" parent="." unique_id=1881354150]
+offset_left = 467.0
+offset_top = 385.0
+offset_right = 685.0
+offset_bottom = 465.0
+theme_override_font_sizes/normal_font_size = 50
+text = "Level #"
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=1998971314]
+offset_left = 509.0
+offset_top = 452.0
+offset_right = 601.0
+offset_bottom = 545.0
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"

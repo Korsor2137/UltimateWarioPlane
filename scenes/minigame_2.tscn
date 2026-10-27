@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://c8uopjfdtpuil"]
+
+[ext_resource type="Script" uid="uid://de6npp3q62hb3" path="res://scenes/minigame_2.gd" id="1_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="1_uiylj"]
+[ext_resource type="Texture2D" uid="uid://bin5oiqlgreay" path="res://bullshish/piwo Paliwo.png" id="2_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://c6lvb5wt5gs2p" path="res://bullshish/sasalot.png" id="3_dqa6p"]
+[ext_resource type="PackedScene" uid="uid://dgwo1m8eol6xn" path="res://scenes/themed_timer.tscn" id="5_dqa6p"]
+
+[node name="minigame_2" type="Node2D" unique_id=17701923]
+script = ExtResource("1_ksu6r")
+
+[node name="UltimateBackground" type="TextureRect" parent="." unique_id=544570652]
+offset_left = -41.999996
+offset_top = -192.0
+offset_right = 3465.136
+offset_bottom = 1631.6992
+scale = Vector2(0.49042866, 0.49185735)
+texture = ExtResource("1_uiylj")
+
+[node name="PiwoPaliwo" type="Sprite2D" parent="." unique_id=1936579049]
+position = Vector2(1127, 305)
+texture = ExtResource("2_ksu6r")
+
+[node name="Sasalot" type="Sprite2D" parent="." unique_id=1811030515]
+position = Vector2(115.000015, 310.00003)
+scale = Vector2(0.37157896, 0.37157896)
+texture = ExtResource("3_dqa6p")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1942615559]
+offset_left = 592.0
+offset_top = 2.0
+offset_right = 1142.0
+offset_bottom = 64.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 1
+theme_override_constants/paragraph_separation = 1
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 36
+text = "TAP! TAP! TAP! Go get the piwo!"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1325363575]
+offset_left = 1039.0
+offset_top = 381.0
+offset_right = 1300.0
+offset_bottom = 444.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 1
+theme_override_constants/paragraph_separation = 1
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 15
+text = "Yeah, get me"
+
+[node name="ThemedTimer" parent="." unique_id=1201676730 instance=ExtResource("5_dqa6p")]

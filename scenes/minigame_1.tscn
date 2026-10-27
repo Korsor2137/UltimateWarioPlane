@@ -1,0 +1,276 @@
+[gd_scene format=3 uid="uid://0nabegq1acov"]
+
+[ext_resource type="PackedScene" uid="uid://c1fbqw5pcuc13" path="res://scenes/gejmer.tscn" id="1_2n61g"]
+[ext_resource type="Script" uid="uid://ln7xv8d5x5jh" path="res://scenes/minigame_1.gd" id="1_fa05o"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="1_v5ebm"]
+[ext_resource type="Texture2D" uid="uid://bin5oiqlgreay" path="res://bullshish/piwo Paliwo.png" id="2_og05i"]
+[ext_resource type="Script" uid="uid://bdmvdph3a0mg0" path="res://scenes/paliwo_piwo.gd" id="3_v5ebm"]
+[ext_resource type="PackedScene" uid="uid://dgwo1m8eol6xn" path="res://scenes/themed_timer.tscn" id="6_j1cg4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cj0eo"]
+size = Vector2(1603, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgd8w"]
+size = Vector2(264, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8pbmj"]
+size = Vector2(87, 820.5)
+
+[sub_resource type="Animation" id="Animation_lmjug"]
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1078, 440), Vector2(1076, 423)]
+}
+
+[sub_resource type="Animation" id="Animation_v5ebm"]
+resource_name = "floating"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1078, 440), Vector2(1078, 423)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fa05o"]
+_data = {
+&"RESET": SubResource("Animation_lmjug"),
+&"floating": SubResource("Animation_v5ebm")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rcqqe"]
+radius = 35.014282
+
+[node name="minigame_1" type="Node2D" unique_id=593702349]
+script = ExtResource("1_fa05o")
+
+[node name="UltimateBackground" type="TextureRect" parent="." unique_id=232593568]
+offset_left = -84.99988
+offset_top = -349.0
+offset_right = 3446.604
+offset_bottom = 1887.4207
+scale = Vector2(0.49042866, 0.49185735)
+texture = ExtResource("1_v5ebm")
+
+[node name="PlatformaObywatelska" type="StaticBody2D" parent="." unique_id=1545129609]
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska" unique_id=1740522671]
+offset_left = -9.0
+offset_top = 610.0
+offset_right = 1973.7998
+offset_bottom = 676.5369
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska" unique_id=1333477338]
+position = Vector2(712.5, 641)
+shape = SubResource("RectangleShape2D_cj0eo")
+
+[node name="PlatformaObywatelska2" type="StaticBody2D" parent="." unique_id=503195764]
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska2" unique_id=510137041]
+offset_left = 396.0
+offset_top = 513.0
+offset_right = 665.0
+offset_bottom = 533.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska2" unique_id=1239013348]
+position = Vector2(531, 523)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="PlatformaObywatelska3" type="StaticBody2D" parent="." unique_id=2109900299]
+position = Vector2(592, 2)
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska3" unique_id=1239434812]
+offset_left = 436.0
+offset_top = 515.0
+offset_right = 705.0
+offset_bottom = 535.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska3" unique_id=1378283100]
+position = Vector2(571, 525)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="PlatformaObywatelska4" type="StaticBody2D" parent="." unique_id=1350975841]
+position = Vector2(192, -98)
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska4" unique_id=808447190]
+offset_left = 396.0
+offset_top = 513.0
+offset_right = 665.0
+offset_bottom = 533.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska4" unique_id=1853422524]
+position = Vector2(531, 523)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="PlatformaObywatelska5" type="StaticBody2D" parent="." unique_id=1934346513]
+position = Vector2(-277, -99)
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska5" unique_id=1739815975]
+offset_left = 396.0
+offset_top = 513.0
+offset_right = 665.0
+offset_bottom = 533.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska5" unique_id=1671032542]
+position = Vector2(531, 523)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="PlatformaObywatelska6" type="StaticBody2D" parent="." unique_id=274118185]
+position = Vector2(-524, -206)
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska6" unique_id=439123613]
+offset_left = 396.0
+offset_top = 513.0
+offset_right = 665.0
+offset_bottom = 533.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska6" unique_id=837585298]
+position = Vector2(531, 523)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="PlatformaObywatelska7" type="StaticBody2D" parent="." unique_id=1545426224]
+position = Vector2(-257, -306)
+
+[node name="ColorRect" type="ColorRect" parent="PlatformaObywatelska7" unique_id=659709418]
+offset_left = 518.0
+offset_top = 518.0
+offset_right = 787.0
+offset_bottom = 538.0
+color = Color(0.23058191, 0.20606387, 0.20285347, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformaObywatelska7" unique_id=1257660906]
+position = Vector2(653, 528)
+shape = SubResource("RectangleShape2D_kgd8w")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1433816339]
+visible = false
+scroll_offset = Vector2(273, 221)
+autoscroll = Vector2(100, 0)
+
+[node name="background67" type="TextureRect" parent="Parallax2D" unique_id=981048388]
+offset_left = 65.0
+offset_top = -127.0
+offset_right = 187.0
+offset_bottom = -35.0
+
+[node name="granica" type="StaticBody2D" parent="." unique_id=2020496514]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="granica" unique_id=1334866795]
+position = Vector2(-35, 201.25)
+shape = SubResource("RectangleShape2D_8pbmj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="granica" unique_id=1030488264]
+position = Vector2(1340, 229)
+shape = SubResource("RectangleShape2D_8pbmj")
+
+[node name="Player" parent="." unique_id=1588073689 instance=ExtResource("1_2n61g")]
+position = Vector2(-81, 401)
+
+[node name="paliwoPiwo" type="Node2D" parent="." unique_id=1556585085]
+script = ExtResource("3_v5ebm")
+
+[node name="Pyfko" type="TextureRect" parent="paliwoPiwo" unique_id=861389712]
+offset_left = 1078.0
+offset_top = 440.0
+offset_right = 1149.0
+offset_bottom = 511.00034
+texture = ExtResource("2_og05i")
+expand_mode = 1
+
+[node name="animacjon" type="AnimationPlayer" parent="paliwoPiwo" unique_id=1092337686]
+root_node = NodePath("../Pyfko")
+libraries/ = SubResource("AnimationLibrary_fa05o")
+autoplay = &"RESET"
+
+[node name="Area2D" type="Area2D" parent="paliwoPiwo" unique_id=2079500103]
+position = Vector2(1102, 475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paliwoPiwo/Area2D" unique_id=1888535300]
+shape = SubResource("CircleShape2D_rcqqe")
+
+[node name="paliwoPiwo2" type="Node2D" parent="." unique_id=2138847153]
+position = Vector2(-389, -102)
+script = ExtResource("3_v5ebm")
+
+[node name="Pyfko" type="TextureRect" parent="paliwoPiwo2" unique_id=126484966]
+offset_left = 1078.0
+offset_top = 440.0
+offset_right = 1149.0
+offset_bottom = 511.00034
+texture = ExtResource("2_og05i")
+expand_mode = 1
+
+[node name="animacjon" type="AnimationPlayer" parent="paliwoPiwo2" unique_id=1418947514]
+root_node = NodePath("../Pyfko")
+libraries/ = SubResource("AnimationLibrary_fa05o")
+autoplay = &"RESET"
+
+[node name="Area2D" type="Area2D" parent="paliwoPiwo2" unique_id=673734158]
+position = Vector2(1102, 475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paliwoPiwo2/Area2D" unique_id=705725673]
+shape = SubResource("CircleShape2D_rcqqe")
+
+[node name="paliwoPiwo3" type="Node2D" parent="." unique_id=558051875]
+position = Vector2(-706, -306)
+script = ExtResource("3_v5ebm")
+
+[node name="Pyfko" type="TextureRect" parent="paliwoPiwo3" unique_id=1972009589]
+offset_left = 1078.0
+offset_top = 440.0
+offset_right = 1149.0
+offset_bottom = 511.00034
+texture = ExtResource("2_og05i")
+expand_mode = 1
+
+[node name="animacjon" type="AnimationPlayer" parent="paliwoPiwo3" unique_id=338628220]
+root_node = NodePath("../Pyfko")
+libraries/ = SubResource("AnimationLibrary_fa05o")
+autoplay = &"RESET"
+
+[node name="Area2D" type="Area2D" parent="paliwoPiwo3" unique_id=1628248867]
+position = Vector2(1102, 475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paliwoPiwo3/Area2D" unique_id=1502307761]
+shape = SubResource("CircleShape2D_rcqqe")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=874169594]
+offset_left = 22.0
+offset_top = 11.0
+offset_right = 326.0
+offset_bottom = 51.0
+theme_override_constants/outline_size = 7
+text = "Move with arrows; jump with space"
+
+[node name="ThemedTimer" parent="." unique_id=1201676730 instance=ExtResource("6_j1cg4")]
+position = Vector2(863, 22)
+
+[connection signal="piwo_collected" from="paliwoPiwo" to="." method="piwo_collect"]
+[connection signal="piwo_collected" from="paliwoPiwo2" to="." method="piwo_collect"]
+[connection signal="piwo_collected" from="paliwoPiwo3" to="." method="piwo_collect"]

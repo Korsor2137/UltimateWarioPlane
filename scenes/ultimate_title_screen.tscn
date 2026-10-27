@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://b8shkp8r4wo8o"]
+
+[ext_resource type="Script" uid="uid://coxp0vvjux11g" path="res://script/ultimate_title_screen.gd" id="1_qldpb"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="2_o8ksf"]
+[ext_resource type="Texture2D" uid="uid://bwtk4bwhidyo4" path="res://bullshish/New Piskel (1).png" id="3_h251u"]
+[ext_resource type="Texture2D" uid="uid://dvemswbytqucf" path="res://bullshish/ultimate obrz.png" id="4_i3b4r"]
+[ext_resource type="Texture2D" uid="uid://duru6qofj4aoj" path="res://bullshish/New Piskel.png" id="5_jceaa"]
+
+[sub_resource type="Animation" id="Animation_7ftbh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UltimateBackground:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-80, -360)]
+}
+
+[sub_resource type="Animation" id="Animation_fqph1"]
+resource_name = "tlo"
+length = 3.4666667
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UltimateBackground:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-80, -360), Vector2(-3.0000076, -351)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i07bf"]
+_data = {
+&"RESET": SubResource("Animation_7ftbh"),
+&"tlo": SubResource("Animation_fqph1")
+}
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ftbh"]
+load_path = "res://.godot/imported/ultimate obrz.png-bc524cd206afb58b39b85779604c683c.ctex"
+
+[sub_resource type="Animation" id="Animation_i07bf"]
+length = 0.96666664
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.49999988),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_7ftbh")]
+}
+
+[sub_resource type="Animation" id="Animation_y7yya"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.6, 0.72),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("4_i3b4r"), ExtResource("4_i3b4r")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1i3k6"]
+_data = {
+&"RESET": SubResource("Animation_i07bf"),
+&"new_animation": SubResource("Animation_y7yya")
+}
+
+[node name="UltimateTitleScreen" type="Node2D" unique_id=1972833240]
+script = ExtResource("1_qldpb")
+
+[node name="UltimateBackground" type="TextureRect" parent="." unique_id=105544707]
+offset_left = -80.0
+offset_top = -360.0
+offset_right = 3031.5637
+offset_bottom = 2154.127
+scale = Vector2(0.49042866, 0.49185735)
+texture = ExtResource("2_o8ksf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UltimateBackground" unique_id=1302108102]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_i07bf")
+autoplay = &"tlo"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UltimateBackground" unique_id=725905423]
+layout_mode = 0
+offset_left = 1910.5735
+offset_top = 1213.7666
+offset_right = 2375.4731
+offset_bottom = 1630.554
+
+[node name="start" type="Button" parent="UltimateBackground/VBoxContainer" unique_id=1789812239]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Start Game "
+
+[node name="settings" type="Button" parent="UltimateBackground/VBoxContainer" unique_id=1551346845]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Settings"
+
+[node name="quit" type="Button" parent="UltimateBackground/VBoxContainer" unique_id=1791019506]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Quit Playing Man"
+
+[node name="plane" type="Sprite2D" parent="." unique_id=1377514830]
+texture_filter = 1
+position = Vector2(419.00003, 541)
+scale = Vector2(3.006836, 3.006836)
+texture = ExtResource("3_h251u")
+
+[node name="UltimateObrz" type="Sprite2D" parent="." unique_id=1896956790]
+texture_filter = 1
+position = Vector2(348.93768, 172.42578)
+scale = Vector2(2.1600323, 2.0906327)
+texture = SubResource("CompressedTexture2D_7ftbh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UltimateObrz" unique_id=1066498148]
+libraries/ = SubResource("AnimationLibrary_1i3k6")
+
+[node name="NewPiskel" type="Sprite2D" parent="." unique_id=1590948464]
+texture_filter = 1
+position = Vector2(540, 295)
+scale = Vector2(2.0407715, 2.0407712)
+texture = ExtResource("5_jceaa")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=505536332]
+offset_left = 766.00006
+offset_top = 550.0
+offset_right = 963.8032
+offset_bottom = 595.84546
+rotation = 0.26677105
+theme_override_colors/default_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "Now in 144p!"
+
+[connection signal="pressed" from="UltimateBackground/VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="UltimateBackground/VBoxContainer/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="UltimateBackground/VBoxContainer/quit" to="." method="_on_quit_pressed"]

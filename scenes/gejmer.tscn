@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c1fbqw5pcuc13"]
+
+[ext_resource type="Script" uid="uid://bx8quk46p0ojx" path="res://script/gejmer.gd" id="1_iwxac"]
+[ext_resource type="Texture2D" uid="uid://c6lvb5wt5gs2p" path="res://bullshish/sasalot.png" id="2_iwxac"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwxac"]
+size = Vector2(158, 36)
+
+[node name="Player" type="CharacterBody2D" unique_id=1588073689]
+script = ExtResource("1_iwxac")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=274506586]
+texture_filter = 2
+position = Vector2(195, 196.99998)
+scale = Vector2(0.24706821, 0.2470682)
+texture = ExtResource("2_iwxac")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1449851923]
+position = Vector2(201, 194)
+shape = SubResource("RectangleShape2D_iwxac")

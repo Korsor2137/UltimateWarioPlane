@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://pwfemxcomr3q"]
+
+[ext_resource type="AudioStream" uid="uid://bgc0ylq4igq4f" path="res://bullshish/ultimate crap2.ogg" id="1_05ggv"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=1589372299]
+stream = ExtResource("1_05ggv")
+autoplay = true
+parameters/looping = true

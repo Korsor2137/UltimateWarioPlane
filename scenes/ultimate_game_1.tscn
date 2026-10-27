@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://db5uej6k3x4lc"]
+
+[ext_resource type="Texture2D" uid="uid://wobobopdlc2j" path="res://icon.svg" id="1_1tffu"]
+
+[node name="UltimateMidEkran1" type="Node2D" unique_id=744696994]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1018193573]
+offset_left = 226.0
+offset_top = 249.0
+offset_right = 882.0
+offset_bottom = 377.0
+
+[node name="Żyćko" type="TextureRect" parent="HBoxContainer" unique_id=834047102]
+layout_mode = 2
+texture = ExtResource("1_1tffu")
+
+[node name="Żyćko2" type="TextureRect" parent="HBoxContainer" unique_id=1047578135]
+layout_mode = 2
+texture = ExtResource("1_1tffu")
+
+[node name="Żyćko3" type="TextureRect" parent="HBoxContainer" unique_id=1508837429]
+layout_mode = 2
+texture = ExtResource("1_1tffu")
+
+[node name="Żyćko4" type="TextureRect" parent="HBoxContainer" unique_id=859884372]
+layout_mode = 2
+texture = ExtResource("1_1tffu")
+
+[node name="Żyćko5" type="TextureRect" parent="HBoxContainer" unique_id=72578577]
+layout_mode = 2
+texture = ExtResource("1_1tffu")

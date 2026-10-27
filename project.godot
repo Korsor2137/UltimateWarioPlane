@@ -11,12 +11,19 @@ config_version=5
 [application]
 
 config/name="UltimateWarioPlane"
+run/main_scene="uid://b8shkp8r4wo8o"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+UltimateGlobalScript="*uid://brsa8qyamelvq"
+Music="*uid://pwfemxcomr3q"
+UltimateSettings="*uid://dvysip54u57ec"
+
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [editor_plugins]

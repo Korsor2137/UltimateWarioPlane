@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dvysip54u57ec"]
+
+[ext_resource type="Script" uid="uid://dp3182126ff8t" path="res://script/ultimate_settings.gd" id="1_k4sro"]
+[ext_resource type="Texture2D" uid="uid://cfj62c7ex14u7" path="res://bullshish/trash ground 1.png" id="2_ayj01"]
+[ext_resource type="Script" uid="uid://b578ri0ify5k0" path="res://script/h_slider.gd" id="3_k4sro"]
+
+[node name="ultimate_settings" type="Node2D" unique_id=236623586]
+script = ExtResource("1_k4sro")
+
+[node name="TrashGround1" type="Sprite2D" parent="." unique_id=1271325291]
+position = Vector2(868, 413)
+scale = Vector2(4.111377, 4.1113753)
+texture = ExtResource("2_ayj01")
+
+[node name="back" type="Button" parent="." unique_id=1154941035]
+offset_left = 46.0
+offset_top = 303.0
+offset_right = 148.0
+offset_bottom = 340.0
+text = "Go back"
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1379391667]
+offset_left = 442.0
+offset_top = 268.0
+offset_right = 640.0
+offset_bottom = 362.0
+script = ExtResource("3_k4sro")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSlider" unique_id=1558689800]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 235.0
+offset_bottom = 38.0
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/normal_font_size = 28
+text = "Music volume:"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
